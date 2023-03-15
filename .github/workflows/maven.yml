@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test (11, ubuntu-latest):
+  build-and-test-11-ubuntu-latest:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package
 
-  build-and-test (11, macos-latest):
+  build-and-test-11-macos-latest:
     runs-on: macos-latest
 
     steps:
@@ -33,7 +33,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package
 
-  build-and-test (11, windows-latest):
+  build-and-test-11-windows-latest:
     runs-on: windows-latest
 
     steps:
@@ -46,7 +46,7 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package
-  build-and-test (17, ubuntu-latest):
+  build-and-test-17-ubuntu-latest:
     runs-on: ubuntu-latest
 
     steps:
@@ -60,7 +60,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package
 
-  build-and-test (17, macos-latest):
+  build-and-test-17-macos-latest:
     runs-on: macos-latest
 
     steps:
@@ -74,7 +74,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package
 
-  build-and-test (17, windows-latest):
+  build-and-test-17-windows-latest:
     runs-on: windows-latest
 
     steps:
